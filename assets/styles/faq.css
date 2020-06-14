@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500');
+*,
+*::before,
+*::after {
+	/* box-sizing: inherit; */
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	/*background-color: #FFF;*/
+	color: #666;
+	/* display: ; */
+	min-height: 100vh;
+}
+
+.navbar {
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0.94),
+		rgba(255, 255, 255, 1)
+	) !important;
+	/* overflow-x: hidden; */
+}
+
+.bg {
+	background: url('https://image.freepik.com/free-photo/white-wall-with-texture-background_24836-60.jpg')
+		no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.container {
+	/* margin: 0 auto; */
+	/* padding: 4rem; */
+	/* max-width: 48rem; */
+	margin-top: 3rem;
+}
+
+.accordion-item {
+	width: 100%;
+}
+
+.accordion a {
+	min-height: 4rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 1rem 3rem 1rem 1rem;
+	color: #7288a2;
+	font-size: 1.25rem;
+	font-weight: 400;
+	border-bottom: 1px solid #ddd;
+	text-decoration: none;
+	transition: 0.5s, height 1s;
+}
+
+.accordion a.active {
+	color: #ff8021;
+	/* border-bottom: 1px solid #ff8021; */
+	font-size: 1.4rem;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+	cursor: pointer;
+	color: #ff8021;
+	/* font-size: 1.56rem; */
+}
+
+.accordion a::after {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f078';
+	font-weight: 900;
+	position: absolute;
+	/* float: right; */
+	right: 1rem;
+	font-size: 1.1rem;
+	color: #7288a2;
+	bottom: 2rem;
+	transform: translateY(50%);
+}
+
+.accordion a.active::after {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f077';
+	font-weight: 900;
+	color: #ff8021;
+}
+
+.accordion .content p {
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	padding-left: 2rem;
+	font-size: 1.2rem;
+	font-weight: 300;
+	/* background-color: ; */
+}
+
+.accordion .content {
+	opacity: 0;
+	max-height: 0;
+	padding: 0 1rem;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.accordion .content.active {
+	opacity: 1;
+	max-height: 100%;
+	padding-bottom: 1rem;
+	transition: all 0.3s ease;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 4rem;
+	color: white;
+	text-shadow: 2px 2px #ff8021;
+	position: relative;
+	/* animation: text 3s 1; */
+	letter-spacing: 8px;
+	/* transition: 1s, height 4s; */
+	margin-bottom: 1rem;
+}
+
+h1:hover {
+	/* letter-spacing: 25px; */
+}
+
+.jumbotron {
+	background-image: url(https://image.freepik.com/free-photo/many-falling-blocks-with-question-marks-3d-illustration_75780-203.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@keyframes text {
+	0% {
+		color: #ff8021;
+		margin-bottom: -40px;
+		font-size: 0px;
+	}
+	30% {
+		letter-spacing: 20px;
+		margin-bottom: -40px;
+	}
+	85% {
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+		font-size: 50px;
+	}
+}
+
+li {
+	font-size: 1.5rem;
+}

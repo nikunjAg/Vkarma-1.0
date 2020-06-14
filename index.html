@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/styles/chatbot.css" />
+    <link href="assets/styles/features.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <!-- <script src="assets/scripts/app.js" defer></script> -->
+    <!-- <link rel="stylesheet" href="assets/styles/aos.css" /> -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+    <script src="https://kit.fontawesome.com/0f8be535cb.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/chatbot.js" defer></script>
+    <!-- Material Design Bootstrap -->
+    <!-- <link rel="stylesheet" href="assets/styles/mdb.min.css"> -->
+    <!-- Font Awesome -->
+    <title>Vkarma</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- Chatbot Start -->
+    <div class="start-chat">
+      <div class="icon"><img src="./assets/images/chaticon.png" alt="" /></div>
+      <div class="on-hover">Chat with us</div>
+    </div>
+    <div class="chat-window">
+      <div class="chat-head">
+        <img src="./assets/images/chatbot.png" alt="sas" id="vachiLogo" />
+        <div class="chatbot-name">
+          <span>VACHI</span>
+          <span class="online">Online</span>
+        </div>
+        <button><img src="./assets/images/cross.png" alt="saas" /></button>
+      </div>
+      <div class="chat-area"></div>
+    </div>
+    <!-- Chatbot ends -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="logo" /></a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+      <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="tel:91870080998"><i class="fas fa-phone-alt"></i> +91 870080998</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#key">Key Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+    <!-- <div class="background">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <div class="site-intro">
+          <h2 class="display-2" data-aos="fade-right">One Stop Destination for <br> Administrative Solution</h2>
+          <h6 data-aos="fade-left">Available on</h6>
+          <a href="#" class="playstore" data-aos="fade-left"></a>
+          <a href="" class="iosstore" data-aos="fade-left"></a>
+          <button data-aos="fade-up-left">Get Started for Free</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-5">
+        <form class="text-center border border-light p-5">
+
+          <p class="h4 mb-4">Contact us</p>
+
+          <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+          <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+          <label>Subject</label>
+          <select class="browser-default custom-select mb-4">
+            <option value="" disabled>Choose option</option>
+            <option value="1" selected>Feedback</option>
+            <option value="2">Report a bug</option>
+            <option value="3">Feature request</option>
+            <option value="4">Feature request</option>
+          </select>
+
+          <div class="form-group">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+              placeholder="Message"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mx-auto d-flex justify-content-center">
+              <mdb-checkbox [default]="true" class="mb-4">Send me a copy of this message</mdb-checkbox>
+            </div>
+          </div>
+
+          <button mdbBtn color="info" block="true" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+    <div class="background">
+      <!-- <div class="row"> -->
+      <div class="col-12 col-sm-7">
+        <div class="site-intro">
+          <h2 class="display-2" data-aos="fade-right">
+            One Stop Destination for <br />
+            Administrative Solution
+          </h2>
+          <h6 data-aos="fade-left">Available on</h6>
+          <a href="#" class="playstore" data-aos="fade-left"></a>
+          <a href="" class="iosstore" data-aos="fade-left"></a>
+          <button id="get-started-btn" data-aos="fade-up-left" onclick="location.href='contactus.html'">Get
+            Started for
+            Free</button>
+        </div>
+      </div>
+      <div id="header-contact-us" class="d-none d-sm-block col-12 col-sm-5" data-aos="fade-left">
+        <div class="formHeader">
+          <!-- <video src="assets/images2/smoke.mp4" autoplay muted style="width: inherit; z-index: -1;">
+        </video> -->
+          <h1 class="display-4" id="contactUs">Contact us</h1>
+        </div>
+        <form action="https://formspree.io/vkarmaedutech@gmail.com" method="POST" class="text-center px-3 py-3"
+          id="headForm">
+          <div class="form-group">
+            <input type="text" id="defaultContactFormName" class="form-control mb-4 frm" placeholder="Name" name="Name"
+              required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-4 frm" placeholder="E-mail"
+              name="Email" required />
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control mb-4 frm" name="phone-number" placeholder="Phone Number"
+              required />
+          </div>
+          <div class="form-group">
+            <textarea class="form-control frm" id="exampleFormControlTextarea2" rows="1" name="message"
+              placeholder="Message"></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="Landing Contact Us" />
+          <!-- <div class="row justify-content-center">
+						<div class="col-3">
+							<div class="form-check form-check-inline">
+								<input
+									type="checkbox"
+									class="form-check-input"
+									id="materialInline1"
+								/>
+								<label
+									class="form-check-label labTxt"
+									for="materialInline1"
+									style=""
+									>Parent</label
+								>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="form-check form-check-inline">
+								<input
+									type="checkbox"
+									class="form-check-input"
+									id="materialInline1"
+								/>
+								<label
+									class="form-check-label labTxt"
+									for="materialInline1"
+									style=""
+									>Teacher</label
+								>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="form-check form-check-inline">
+								<input
+									type="checkbox"
+									class="form-check-input"
+									id="materialInline1"
+								/>
+								<label
+									class="form-check-label labTxt"
+									for="materialInline1"
+									style=""
+									>Student</label
+								>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="form-check form-check-inline">
+								<input
+									type="checkbox"
+									class="form-check-input"
+									id="materialInline1"
+								/>
+								<label
+									class="form-check-label labTxt"
+									for="materialInline1"
+									style=""
+									>Faculty</label
+								>
+							</div>
+						</div>
+					</div> -->
+          <select class="form-control frm" required>
+            <option value="">Select Option</option>
+            <option value="Parent">Parent</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Student">Student</option>
+            <option value="Faculty">Faculty</option>
+          </select>
+          <button color="info" block="true" class="mb-0" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="who-we-are" class="container text-center pt-3">
+      <h1 id="wwa" class="display-4 text-center">Who we are?</h1>
+      <p class="lead" id="mainText">
+        Take your digital learning to new heights in Vkarma, for enhancing the
+        administrative output, bridges communication gap and provide different
+        tools to monitor progress.
+      </p>
+      <a class="know-more" href="about.html">Know More</a>
+    </div>
+    <!-- <hr> -->
+    <div class="container services">
+      <h1 class="display-4" data-aos="flip-up">Services</h1>
+      <div class="container">
+        <hr width="100%" />
+      </div>
+      <br /><br />
+      <div class="container-fluid">
+        <div class="row" style="justify-content: center;">
+          <div class="flip-card col-8 col-md-6 col-lg-3 my-5" data-aos="zoom-in-down">
+            <div class="flip-card-inner">
+              <div class="front" id="one">
+                <img src="assets/images/cms.jpg" alt="" />
+                <h1>Classroom Management</h1>
+              </div>
+              <div class="back">
+                <ul>
+                  <li>Live Classes</li>
+                  <li>Resource Sharing</li>
+                  <li>Attendance Tracking</li>
+                  <li>Alert System</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card col-8 col-md-6 col-lg-3 my-5" data-aos="zoom-in-down">
+            <div class="flip-card-inner rightside">
+              <div class="front" id="two">
+                <img src="assets/images/academic.jpg" alt="" />
+                <h1>Academics Management</h1>
+              </div>
+              <div class="back">
+                <ul>
+                  <li>Exam Conduction</li>
+                  <li>Result Analysis</li>
+                  <li>Course Review</li>
+                  <li>Syllabus Tracking</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card col-8 col-md-6 col-lg-3 my-5" data-aos="zoom-in-down">
+            <div class="flip-card-inner">
+              <div class="front" id="three">
+                <img src="assets/images/general.jpg" alt="" />
+                <h1>General Management</h1>
+              </div>
+              <div class="back">
+                <ul>
+                  <li>Fees Management</li>
+                  <li>Faculty Attendance</li>
+                  <li>Parent Communication</li>
+                  <li>Content Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card col-8 col-md-6 col-lg-3 my-5" data-aos="zoom-in-down">
+            <div class="flip-card-inner rightside">
+              <div class="front" id="four">
+                <img src="assets/images/premium.jpg" alt="" />
+                <h1>Premium Collaboration</h1>
+              </div>
+              <div class="back">
+                <ul>
+                  <li>White Label Per Branding</li>
+                  <li>OTA Updates</li>
+                  <li>Instant Support</li>
+                  <li>Query Resolution</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="container1 container">
+      <div class="row">
+
+        <div class="col-12 col-md-6">
+          <div class="card border-none">
+            <div class="face face1">
+              <div class="content">
+                <img src="assets/images/cms.jpg">
+                <h3>Classroom Management</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <ul>
+                  <li>Live Classes</li>
+                  <li>Resource Sharing</li>
+                  <li>Attendance Tracking</li>
+                  <li>Alert System</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card border-none">
+            <div class="face face1">
+              <div class="content">
+                <img src="assets/images/academic.jpg">
+                <h3>Academics Management</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <ul>
+                  <li>Exam Conduction</li>
+                  <li>Result Analysis</li>
+                  <li>Course Review</li>
+                  <li>Syllabus Tracking</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card border-none">
+            <div class="face face1">
+              <div class="content">
+                <img src="assets/images/general.jpg">
+                <h3>General Management</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <ul>
+                  <li>Fees Management</li>
+                  <li>Faculty Attendance</li>
+                  <li>Parent Communication</li>
+                  <li>Content Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card border-none">
+            <div class="face face1">
+              <div class="content">
+                <img src="assets/images/premium.jpg">
+                <h3>Premium Collaboration</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <ul>
+                  <li>White Label Per Branding</li>
+                  <li>OTA Updates</li>
+                  <li>Instant Support</li>
+                  <li>Query Resolution</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div> -->
+    </div>
+
+    <!-- key features -->
+
+    <section id="video-conferencing">
+      <h2>Video Conferencing</h2>
+      <div class="video-content">
+        <p>Want to stay connected despite being far away?</p>
+        <p>Want to see statistics of active participants during a meet?</p>
+        <p>For all problems we have one solution.</p>
+        <h4>Vkarma presents a</h4>
+        <h3>Video Conferencing System</h3>
+        <p> - stay connected anytime, anywhere.</p>
+        <button onclick="location.href='contactus.html'">Get Started</button>
+      </div>
+      <div class="video-image">
+        <img src="assets/images/video-conferencing.jpg" alt="Video Conferencing">
+      </div>
+    </section>
+
+    <div class="container text-center imaged">
+      <div class="row">
+        <div class="col-12 pr-3 text-center">
+          <h1 data-aos="flip-up" class="display-4 text-center" id="key">Key Features</h1>
+          <br />
+          <div class="container">
+            <hr width="100%" />
+          </div>
+          <br /><br />
+        </div>
+        <div data-aos="zoom-in-up" class="col-12 col-sm-6 col-md-4 mb-5 ">
+          <div class="card border-none">
+            <img src="./img/onlineclass.jpg" height="350px" class="card-img-top img-responsive" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Online Classes</h5>
+              <!-- <p class="card-text">Founder And CEO</p> -->
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" class="col-12 col-sm-6 col-md-4 mb-5 ">
+          <div class="card border-none">
+            <img src="./img/mocktest.jpg" height="350px" class="card-img-top img-responsive" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mock Test</h5>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" class="col-12 col-sm-6 col-md-4 mb-5 ">
+          <div class="card border-none">
+            <img src="./img/videostream.jpg" height="350px" class="card-img-top img-responsive" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Video Streaming</h5>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" class="col-12 col-sm-6 col-md-4 mb-5 ">
+          <div class="card border-none">
+            <img src="./img/fees.jpg" height="350px" class="card-img-top img-responsive" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Fees Management</h5>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" class="col-12 col-sm-6 col-md-4 mb-5 ">
+          <div class="card border-none">
+            <img src="./img/onlinetest.jpg" height="350px" class="card-img-top img-responsive" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Online Test</h5>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" class="col-12 col-sm-6 col-md-4 mb-5 ">
+          <div class="card border-none">
+            <img src="./img/chatbot.jpg" height="350px" class="card-img-top img-responsive" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Personalized Chatbot</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- Form -->
+    <!-- <div class="container form-container" style="padding:0%">
+		<div class="formBx">
+			<form>
+				<h2>Contact Us</h2>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Full Name</span>
+				</div>
+				<div class="inputBox">
+					<input type="email" name="" required="required">
+					<span>Email Address</span>
+				</div>
+				<div class="inputBox">
+					<textarea required="required"></textarea>
+					<span>Type your message here...</span>
+				</div>
+				<div class="inputBox">
+					<input type="submit" value="Send" name="" required="required">
+					
+				</div>
+			</form>
+		</div>
+		<div class="imgBx">
+			<img src="./img/girl.png">
+		</div>
+	</div>
+
+
+		<br />
+		<div class="container form-container my-3" id="form" style="padding: 0%;">
+			<div class="formBx">
+				<form class="py-5">
+					<h2 class="text-center">Contact Us</h2>
+					<div class="container">
+						<div class="row">
+							<div class="inputBox col-12 col-md-6">
+								<input type="text" name="" required="required" />
+								<span>First Name</span>
+							</div>
+							<div class="inputBox col-12 col-md-6">
+								<input type="text" name="" required="required" />
+								<span>Last Name</span>
+							</div>
+
+							<div class="inputBox col-12 col-md-6">
+								<input type="email" name="" required="required" />
+								<span>Email Address</span>
+							</div>
+							<div class="inputBox col-12 col-md-6">
+								<input type="tel" value="+91 " id="example-tel-input" required="required" />
+								<span>Phone no.</span>
+							</div>
+
+							<div class="inputBox col-12">
+								<input type="text" name="" required="required" />
+								<span>Name of institute</span>
+							</div>
+							<div class="col-12 text-center mb-5 ">
+								<h5 style="color: #fff;">SIZE OF INSTITUTE</h5>
+							</div>
+
+							Size
+		<div class="inputBox col-6 col-md-6 text-center">
+			<h6 style="color: rgba(255, 255, 255, 0.5);">
+				Number of Teachers
+			</h6>
+			<select id="exampleFormControlSelect1" style="background-color: #29335c; color: white;">
+				<option>0-20</option>
+				<option>21-50</option>
+				<option>51-100</option>
+				<option>100+</option>
+			</select>
+		</div>
+		<div class="inputBox col-6 col-md-6 text-center">
+			<h6 style="color: rgba(255, 255, 255, 0.5);">
+				Number of Students
+			</h6>
+			<select id="exampleFormControlSelect1" style="background-color: #29335c; color: white;">
+				<option>0-100</option>
+				<option>101-2000</option>
+				<option>2001-5000</option>
+				<option>5001-10000</option>
+				<option>10000+</option>
+			</select>
+		</div>
+		</div>
+		address
+		<div class="mt-3 row">
+			<div class="inputBox col-12 col-md-6">
+				<input type="text" id="inputCity" required="required" />
+				<span>City</span>
+			</div>
+			<div class="inputBox col-6 col-md-4">
+				<input type="text" id="inputState" required="required" />
+				<span>State</span>
+			</div>
+			<div class="inputBox col-6 col-md-2">
+				<input type="text" value="110093" id="inputZip" required="required" />
+				<span>Zip</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="inputBox col-12">
+				<textarea required="required"></textarea>
+				<span>Type your message here...</span>
+			</div>
+			<div class="inputBox col-12">
+				<input type="submit" value="Send" name="" required="required" />
+			</div>
+		</div>
+		</div>
+		</form>
+		</div>
+		<div class="imgBx">
+		</div>
+		</div> -->
+
+    <section id="start-free-trial">
+      <h2>Start With Vkarma Today!</h2>
+      <img src="assets/images/getStarted.gif" alt="Get Started" />
+      <div class="trial-content">
+        <h3>Get a Free Demo</h3>
+        <p>
+          Our mission is to design and develop best management system for your
+          all administrative needs.
+        </p>
+        <ul>
+          <li>
+            <img src="assets/images/double-tick.png" alt="tick" />&nbsp;&nbsp;Try It,
+          </li>
+          <li>
+            <img src="assets/images/double-tick.png" alt="tick" />&nbsp;&nbsp;Use It,
+          </li>
+          <li>
+            <img src="assets/images/double-tick.png" alt="tick" />&nbsp;&nbsp;Buy It.
+          </li>
+        </ul>
+        <button class="trial-button" onclick="location.href='contactus.html'">
+          Try It Now !
+        </button>
+      </div>
+    </section>
+
+    <!-- <section class="merit-carousel">
+      <div class="ratings">
+        <h2>Our Average Customer Rating</h2>
+        <img src="assets/images/ratings.gif" alt="Ratings" />
+      </div>
+      <div class="testimonials-data">
+        <h1>Check Out</h1>
+        <h3>what others are saying!</h3>
+        <div class="carousel">
+          <div class="carousel-content active">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+              eius culpa eligendi impedit dolorem molestias. Consequatur
+              consequuntur exercitationem ab eos amet iusto, quia illo quidem
+              deleniti aperiam reiciendis, blanditiis sequi.
+            </p>
+            <small> - Nikunj Aggarwal ( Member since 2019 ) </small>
+          </div>
+          <div class="carousel-content next">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+              excepturi, magni, id nostrum explicabo, quas soluta aliquam cum
+              eius unde dolorum. At autem corporis quia? At, odit cupiditate.
+              Omnis, fugiat.
+            </p>
+            <small> - Mr. Anonymous ( Member since 2019 ) </small>
+          </div>
+          <div class="carousel-content">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem fuga
+              harum nam incidunt architecto dolores, maiores consequuntur
+              aperiam a, itaque repudiandae nobis laudantium magni voluptas
+              animi labore repellat aliquid necessitatibus.
+            </p>
+            <small> - Mr. Unknown ( Member since 2019 ) </small>
+          </div>
+          <div class="carousel-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+              quos non atque laudantium facilis itaque debitis odio maiores
+              aliquid maxime nesciunt, ex eum inventore, accusantium cumque
+              impedit nisi animi. Illo.
+            </p>
+            <small> - Mr. Lorem Ipsum ( Member since 2019 ) </small>
+          </div>
+          <div class="carousel-content prev">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea,
+              similique. Veritatis a voluptatem ipsum error, possimus ab?
+              Exercitationem quidem dolorum, minus animi, delectus harum impedit
+              excepturi, corrupti voluptatibus ab molestiae.
+            </p>
+            <small> - Mr. Duck Duck Go ( Member since 2019 ) </small>
+          </div>
+        </div>
+        <div class="prev-slide-btn"></div>
+        <div class="next-slide-btn"></div>
+        <ul class="carousel-dots-list">
+          <li class="carousel-dot active"></li>
+          <li class="carousel-dot"></li>
+          <li class="carousel-dot"></li>
+          <li class="carousel-dot"></li>
+          <li class="carousel-dot"></li>
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- <section id="reviews-section">
+        <h1>Check Out</h1>
+        <h3>what others are saying</h3>
+        <div id="reviews">
+          <div class="review-box">
+            <div class="stars">
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+            </div>
+  
+            <blockquote class="blockquote mb-0 card-body">
+              <p>What great services from Vkarma. I am splendid!</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted text-right">
+                  Veena Sharma<br />(member since 2019)
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="review-box">
+            <div class="stars">
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+            </div>
+  
+            <blockquote class="blockquote mb-0 card-body">
+              <p>What great services from Vkarma. I am splendid!</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted text-right">
+                  Veena Sharma<br />(member since 2019)
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="review-box">
+            <div class="stars">
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+              <img src="assets/images/star.png" alt="star" />
+            </div>
+  
+            <blockquote class="blockquote mb-0 card-body">
+              <p>What great services from Vkarma. I am splendid!</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted text-right">
+                  Veena Sharma<br />(member since 2019)
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section> -->
+
+    <div class="styling-image"></div>
+    <section id="footer-section">
+      <div class="home">
+        <a href="index.html"><img src="assets/images/logo-white.png" alt="Logo" /></a>
+      </div>
+      <div class="footer-content">
+        <div class="all-links">
+          <div class="contact-us">
+            <h5>Contact Us</h5>
+            <a href="tel:+91-8700-809-998"><img src="assets/images/phone-icon.png"
+                alt="Phone Icon" />+91-8700-809-998</a>
+            <a href="mailto:sales@vkarma.in">
+              <img src="assets/images/gmail-icon.png" alt="Gmail Icon" />
+              sales@vkarma.in</a>
+            <a href="mailto:support@vkarma.in">
+              <img src="assets/images/gmail-icon.png" alt="Gmail Icon" />support@vkarma.in</a>
+          </div>
+          <div class="information">
+            <h5>Information</h5>
+            <a href="index.html#key">Key Features</a>
+            <a href="products.html">Product</a>
+            <a href="about.html">About Us</a>
+            <a href="brochure.html">Broucher</a>
+          </div>
+          <div class="helpful-links">
+            <h5>Helpful Links</h5>
+            <a href="faq.html">FAQs</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="indextc.html">Terms & Conditions</a>
+            <a href="indexpp.html">Privacy Policies</a>
+            <a href="team page.html">Team</a>
+          </div>
+          <!-- <div class="contact-us-form"> -->
+          <!-- <h5>Leave a message</h5>
+              <form
+                action="https://formspree.io/vkarmaedutech@gmail.com"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Enter Name..."
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Enter Email..."
+                  required
+                />
+                <textarea
+                  type="text"
+                  class="form-control"
+                  name="content"
+                  placeholder="Write to us..."
+                  required
+                ></textarea>
+                <button type="submit">Send</button>
+              </form> -->
+          <div class="subscriber">
+            <h5>Subscribe for More Information</h5>
+            <form action="https://formspree.io/vkarmaedutech@gmail.com" method="POST">
+              <input type="email" class="form-control" name="emailId" placeholder="Enter Email Address..." required />
+              <input type="hidden" name="_subject" value="Subscription" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <!-- </div> -->
+        </div>
+        <!-- <hr /> -->
+        <div class="footer-links">
+          <div class="social-media">
+            <h5>Keep In Touch</h5>
+            <a
+              href="https://www.facebook.com/vwkarma/?ref=aymt_homepage_panel&eid=ARDRyOAj68ma-nKVsoecaL80vfPLB4vcDjRaL4lUNp67D5Sq6AEe5HO2D2ZZQp3MDFN5gp4Iwzm_K1g4">
+              <img src="assets/images/facebook-icon.png" alt="Facebook Icon" />
+            </a>
+            <a href="https://www.linkedin.com/company/14535681"><img src="assets/images/linkedin-icon.png"
+                alt="LinkedIn Icon" /></a>
+            <a href="https://www.youtube.com/channel/UC2X6tDkIR40VJ8FZ9tungpg/featured"><img
+                src="assets/images/youtube-icon.png" alt="Youtube Icon" /></a>
+          </div>
+          <!-- <div class="subscriber">
+              <h5>Subscribe for More Information</h5>
+              <form action="" method="get">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="emailId"
+                  placeholder="Enter Email Address..."
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div> -->
+        </div>
+      </div>
+      <div class="copyright">
+        <h5 style="text-align: center; margin-bottom: 0;">Product Of India</h5>
+        <p>© 2019 VKarma Edutech Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </section>
+
+    <script src="assets/scripts/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/scripts/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

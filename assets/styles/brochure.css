@@ -1,0 +1,256 @@
+h1 {
+	text-align: center;
+	font-size: 5vw;
+	padding-top: 1rem;
+	color: orange;
+	width: 80%;
+	margin: 0 auto;
+	text-shadow: 3px 3px #f0a71f;
+	position: relative;
+	margin-bottom: 1rem;
+	/* animation: heading;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-direction: ease-out; */
+
+	/* transition-property: transform;
+	transition-duration: 2s; */
+}
+
+/* h1:hover{ */
+/*transform: rotateY(360deg);*/
+/* } */
+@keyframes heading {
+	0% {
+		top: -250px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+h2 {
+	font-size: 1rem;
+	color: #7288a2;
+	/* text-shadow: 1px 2px #7288a2; */
+}
+.content {
+	font-size: 2vw;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	text-align: center;
+}
+#line {
+	opacity: 0;
+	animation: hline;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+@keyframes hline {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0.2;
+	}
+	40% {
+		opacity: 0.4;
+	}
+	60% {
+		opacity: 0.6;
+	}
+	80% {
+		opacity: 0.7;
+	}
+	99.9% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*#image1:hover{
+	transform: perspective(500px) translateZ(55px);
+	transition: 1s;
+}
+.content:hover{
+	/*transform: perspective(500px) translateZ(40px);*/
+/*letter-spacing: 2px;
+
+}*/
+.btn-primary {
+	background-color: orange;
+	border: 2px solid orange;
+	height: auto;
+	width: auto;
+	margin-top: 4rem;
+	box-shadow: 2px 5px orange;
+	/*margin-left: 5rem;*/
+}
+.btn-primary:hover {
+	background-color: orange;
+	border: 2px solid orange;
+	/*transform: perspective(500px) translateZ(40px);*/
+}
+.link {
+	color: white;
+	text-decoration: none;
+	font-size: 2vw;
+}
+.link:hover {
+	color: white;
+	text-decoration: none;
+	/*transform: perspective(500px) translateZ(40px);*/
+}
+/*@keyframes text{
+	0%{
+		color: orange;
+		margin-bottom: -40px;
+		font-size: 0px;
+
+	}
+
+	/*30%{
+		/*letter-spacing: 25px;*/
+/*margin-bottom: -40px;
+		font-size: 25px;
+	}*/
+/*85%{
+		/*letter-spacing: 8px;*/
+/*margin-bottom: -40px;
+		font-size: 50px;
+	}*/
+/*
+	60%{
+		color: orange;
+		margin-bottom: -40px;
+		font-size: 30px;
+
+	}
+
+	80%{
+		color: orange;
+		margin-bottom: -40px;
+		font-size: 40px;
+
+	}
+
+	95%{
+		color: orange;
+		margin-bottom: -40px;
+		font-size: 50px;
+
+	}*/
+/* } */
+.container-fluid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+}
+
+.row {
+	justify-content: center;
+}
+/*#imageblock{
+	transition-duration: 500ms;
+	transition: all 1s, height 4s;
+}
+h2{
+	transition:  .35s ease-in;
+}
+
+@keyframes width{
+	0%{
+		color: black;
+		margin-bottom: -40px;
+		font-size: 0px;
+
+	}
+
+	/*30%{
+		/*letter-spacing: 25px;*/
+/*margin-bottom: -40px;
+		font-size: 25px;
+	}*/
+/*85%{
+		/*letter-spacing: 8px;*/
+/*	margin-bottom: -40px;
+		font-size: 50px;
+	}
+}*/
+
+#imageblock {
+	animation: image;
+	animation-duration: 3s;
+	animation-direction: ease-in-out;
+
+	transition-property: transform;
+	transition-duration: 0.3s;
+}
+#imageblock:hover {
+	transform: perspective(500px) translateZ(55px);
+}
+
+@keyframes image {
+	0% {
+		left: -1000px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+#contentbolck {
+	animation: conten;
+	animation-duration: 3s;
+	animation-direction: ease-in-out;
+}
+@keyframes conten {
+	0% {
+		left: +1000px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+.btn-primary {
+	animation: buton;
+	animation-direction: ease-in;
+	animation-duration: 3.5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+
+	transition-property: transform;
+	transition-duration: 0.3s;
+}
+.btn-primary:hover {
+	background: #e09c14;
+	color: #f7f7f7;
+	box-shadow: 2px 5px #e09c14;
+	border: 1px solid #e09c14;
+	/*transform: rotateY(360deg);*/
+	transform: perspective(500px) translateZ(55px);
+}
+@keyframes buton {
+	0% {
+		opacity: 0;
+	}
+	99.9% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.jumbotron {
+	background-image: url('https://image.freepik.com/free-vector/geometric-honeycomb-shapes-background-paper-style_23-2148287181.jpg');
+	/* height: 300px; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

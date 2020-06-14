@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font-Roboto -->
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+		<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+		<link rel="stylesheet" href="assets/styles/app.css" />
+		<link rel="stylesheet" href="assets/styles/style.css" />
+		<link rel="stylesheet" href="assets/styles/contact-us.css" />
+		<!-- <script src="assets/scripts/app.js" defer></script> -->
+		<title>Contact Us</title>
+	</head>
+
+	<body>
+		<!-- Navigation Bar -->
+		<!-- <header class="navbar navbar-expand-md">
+			<a class="navbar-brand" href="index.html">
+				<img
+					src="assets/images/logo.png"
+					class="d-inline-block align-center"
+					alt="Vkarma Logo"
+					loading="lazy"
+				/>&nbsp;
+			</a>
+			<button
+				class="custom-toggler navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarLinks"
+				aria-controls="navbarLinks"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarLinks">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="productDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Product
+						</a>
+						<div class="dropdown-menu" aria-labelledby="productDropdown">
+							<a class="dropdown-item" href="CMS.html"
+								>Coaching Management System</a
+							>
+							<a class="dropdown-item" href="cs.html"
+								>Hostel Management System</a
+							>
+							<a class="dropdown-item" href="sms.html"
+								>School Management System</a
+							>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="supportDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Support
+						</a>
+						<div class="dropdown-menu" aria-labelledby="supportDropdown">
+							<a class="dropdown-item" href="cs.html">FAQs</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="contactDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Contact
+						</a>
+						<div
+							class="dropdown-menu dropdown-menu-right"
+							aria-labelledby="contactDropdown"
+						>
+							<a class="dropdown-item" href="AboutUs.html">About</a>
+							<a class="dropdown-item" href="contactus.html">Contact Us</a>
+							<a class="dropdown-item" href="partnerpage.html">Get In Touch</a>
+							<a class="dropdown-item" href="Team.html">Team</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header> -->
+
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/logo.png" alt="logo" /></a>
+			<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+			<button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="tel:91870080998"><i class="fas fa-phone-alt"></i> +91 870080998</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#key">Key Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="products.html">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contactus.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="jumbotron jumbotron-fluid jumb">
+			<div class="container">
+				<div class="jumb-content text-center">
+					<h1 class="display-5"><strong>Let's Connect</strong></h1>
+					<!-- <p class="lead" style="font-size:25px; font-weight: 400;">We'd love to help you start exceeding your CX
+                    goals
+                </p> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="custom-container">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<form action="https://formspree.io/vkarmaedutech@gmail.com" method="POST">
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="firstname">First Name<span class="mandatory"> *</span></label>
+								<input type="text" name="firstName" class="form-control" id="lastname" placeholder="First Name"
+									required />
+							</div>
+							<div class="form-group col-md-6">
+								<label for="lastname">Last Name</label>
+								<input type="text" name="lastName" class="form-control" id="lastname" placeholder="Last Name" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail4">Email<span class="mandatory"> *</span> (<a href="indexpp.html">Privacy
+									Policy</a>)</label>
+							<input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="emailId" required />
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone Number<span class="mandatory"> *</span></label>
+							<input type="number" class="form-control" id="inputEmail4" placeholder="Phone Number" value="91"
+								name="emailId" required />
+						</div>
+						<div class="form-group mt-7">
+							<label for="institute">Name Of Institute<span class="mandatory"> *</span></label>
+							<input type="text" name="company" class="form-control" id="institute" placeholder="Institute Name..."
+								required />
+						</div>
+						<div class="form-group">
+							<label for="teachersNo">Number Of Teachers<span class="mandatory"> *</span></label>
+							<select name="teachersNo" class="form-control" id="teachersNo" required>
+								<option value="0-20">0-20</option>
+								<option value="21-50">21-50</option>
+								<option value="51-100">51-100</option>
+								<option value="100+">100+</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="studentsNo">Number Of Students<span class="mandatory"> *</span></label>
+							<select name="studentsNo" class="form-control" id="studentsNo" required>
+								<option value="0-100">0-100</option>
+								<option value="101-2000">101-2000</option>
+								<option value="2001-5000">2001-5000</option>
+								<option value="1000+">10000+</option>
+							</select>
+						</div>
+						<div class="form-group mt-7">
+							<label for="city">City<span class="mandatory"> *</span></label>
+							<input type="text" name="city" class="form-control" id="city" placeholder="City Name..." required />
+						</div>
+						<div class="form-group">
+							<label for="state">State<span class="mandatory"> *</span></label>
+							<input type="text" name="state" class="form-control" id="state" placeholder="State Name..." required />
+						</div>
+						<div class="form-group">
+							<label for="zip">Zip Code<span class="mandatory"> *</span></label>
+							<input type="number" name="zip" class="form-control" id="zip" placeholder="Zip Code..." value="110093"
+								required />
+						</div>
+						<div class="form-group mt-7">
+							<label for="exampleFormControlTextarea1">Tell us more about yourself:<span class="mandatory">
+									*</span></label>
+							<textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="5" required
+								placeholder="Leave a message..."></textarea>
+						</div>
+						<input type="hidden" name="_subject" value="Contact Us Form" />
+						<div class="form-group row">
+							<div class="col-12">
+								<button type="submit" class="btn btn-lg btn-block" style="background-color: #ff8021; color: azure;">
+									Send Message
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-12 col-md-5 offset-md-1">
+					<div class="map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.6521658491124!2d77.03681671508207!3d28.61020998242651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0540ab6a289d%3A0x59c61745faf01f18!2sVkarma!5e0!3m2!1sen!2sin!4v1590482505615!5m2!1sen!2sin"
+							width="100%" height="400" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+							tabindex="0"></iframe>
+					</div>
+					<div class="address">
+						<p>421A, Dwarka Sector-3, Dwarka, Delhi, 110078</p>
+						<p>
+							<a href="mailto:vkarmaedutech@gmail.com">vkarmaedutech@gmail.com</a>
+						</p>
+						<p>
+							Contact Support Care -
+							<a href="mailto:support@vkarma.in">support@vkarma.in</a>
+						</p>
+						<p>
+							For Sales and Demonstration -
+							<a href="mailto:sales@vkarma.in">sales@vkarma.in</a>
+						</p>
+						<p><a href="tel:+918700809998">+91 8700809998</a></p>
+
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="styling-image"></div>
+		<section id="footer-section">
+			<div class="home">
+				<a href="index.html"><img src="assets/images/logo-white.png" alt="Logo" /></a>
+			</div>
+			<div class="footer-content">
+				<div class="all-links">
+					<div class="contact-us">
+						<h5>Contact Us</h5>
+						<a href="tel:+91-8700-809-998"><img src="assets/images/phone-icon.png"
+								alt="Phone Icon" />+91-8700-809-998</a>
+						<a href="mailto:sales@vkarma.in">
+							<img src="assets/images/gmail-icon.png" alt="Gmail Icon" />
+							sales@vkarma.in</a>
+						<a href="mailto:support@vkarma.in">
+							<img src="assets/images/gmail-icon.png" alt="Gmail Icon" />support@vkarma.in</a>
+					</div>
+					<div class="information">
+						<h5>Information</h5>
+						<a href="index.html#key">Key Features</a>
+						<a href="products.html">Product</a>
+						<a href="about.html">About Us</a>
+						<a href="brochure.html">Broucher</a>
+					</div>
+					<div class="helpful-links">
+						<h5>Helpful Links</h5>
+						<a href="faq.html">FAQs</a>
+						<a href="contactus.html">Contact Us</a>
+						<a href="indextc.html">Terms & Conditions</a>
+						<a href="indexpp.html">Privacy Policies</a>
+						<a href="team page.html">Team</a>
+					</div>
+					<!-- <div class="contact-us-form"> -->
+					<!-- <h5>Leave a message</h5>
+              <form
+                action="https://formspree.io/vkarmaedutech@gmail.com"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Enter Name..."
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Enter Email..."
+                  required
+                />
+                <textarea
+                  type="text"
+                  class="form-control"
+                  name="content"
+                  placeholder="Write to us..."
+                  required
+                ></textarea>
+                <button type="submit">Send</button>
+              </form> -->
+					<div class="subscriber">
+						<h5>Subscribe for More Information</h5>
+						<form action="https://formspree.io/vkarmaedutech@gmail.com" method="POST">
+							<input type="email" class="form-control" name="emailId" placeholder="Enter Email Address..." required />
+							<input type="hidden" name="_subject" value="Subscription" />
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+					<!-- </div> -->
+				</div>
+				<!-- <hr /> -->
+				<div class="footer-links">
+					<div class="social-media">
+						<h5>Keep In Touch</h5>
+						<a
+							href="https://www.facebook.com/vwkarma/?ref=aymt_homepage_panel&eid=ARDRyOAj68ma-nKVsoecaL80vfPLB4vcDjRaL4lUNp67D5Sq6AEe5HO2D2ZZQp3MDFN5gp4Iwzm_K1g4">
+							<img src="assets/images/facebook-icon.png" alt="Facebook Icon" />
+						</a>
+						<a href="https://www.linkedin.com/company/14535681"><img src="assets/images/linkedin-icon.png"
+								alt="LinkedIn Icon" /></a>
+						<a href="https://www.youtube.com/channel/UC2X6tDkIR40VJ8FZ9tungpg/featured"><img
+								src="assets/images/youtube-icon.png" alt="Youtube Icon" /></a>
+					</div>
+					<!-- <div class="subscriber">
+              <h5>Subscribe for More Information</h5>
+              <form action="" method="get">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="emailId"
+                  placeholder="Enter Email Address..."
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div> -->
+				</div>
+			</div>
+			<div class="copyright">
+				<h5 style="text-align: center; margin-bottom: 0;">Product Of India</h5>
+				<p>© 2019 VKarma Edutech Pvt. Ltd. All rights reserved.</p>
+			</div>
+		</section>
+
+		<!-- JS, Popper.js, and jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"></script>
+	</body>
+
+</html>

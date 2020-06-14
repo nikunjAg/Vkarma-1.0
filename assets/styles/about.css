@@ -1,0 +1,231 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	/* font-size: ; */
+}
+
+h1 {
+	font-weight: 400;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding-top: 30px;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+}
+
+
+.mainHeader {
+	background-image: linear-gradient(
+			to bottom,
+			rgb(0, 0, 0, 0.2),
+			rgb(0, 0, 0, 0.6)
+		),
+		url(../images2/jumboImg2.png);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	position: relative;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@media(min-width:1024px){
+    .textHead {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
+
+
+@media(max-width:1023px){
+    .textHead {
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+}
+
+.technology {
+	margin-bottom: 100px;
+	color: #ff8021;
+}
+
+#head10 {
+	/* font-size: 3rem; */
+	color: #ff8021;
+}
+
+.heading {
+	padding-top: 2%;
+	align-items: center;
+	text-align: center;
+	color: rgba(255, 129, 33, 1);
+	transition: all 1s;
+	margin-bottom: 1rem;
+	/* animation: fadeInTop 1s cubic-bezier(1, 0, 0, 1); */
+}
+
+
+@keyframes fadeInTop {
+	0% {
+		opacity: 0;
+		transform: translateX(-50%) translateY(-200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	30% {
+		letter-spacing: 4rem;
+	}
+	100% {
+		opacity: 0.7;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	100% {
+		opacity: 0.7;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeRight {
+	0% {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	100% {
+		opacity: 0.7;
+		transform: translateX(0);
+	}
+}
+
+.about {
+	color: #ff8021;
+	text-align: center;
+	text-decoration: dashed;
+	font-size: 4rem;
+	/* animation: fadeIn 0.6s ease-in 0.5s backwards; */
+}
+
+.vismiss {
+	margin-top: 50px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.slogan {
+	margin-top: 2rem;
+	font-weight: 400;
+	font-size: 40px;
+	text-align: center;
+	/* color: #ff8021; */
+}
+
+.cont {
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.visTxt {
+	font-size: 20px;
+	line-height: 25px;
+	word-spacing: 0.5rem;
+	text-align: center;
+}
+
+.vision {
+	margin-top: 100px;
+	/* animation: fadeLeft 0.6s ease-in 1s backwards; */
+	justify-content: center;
+	align-items: center;
+}
+
+.mission {
+	margin-top: 100px;
+	/* animation: fadeRight 0.6s ease-in 1s backwards; */
+	justify-content: center;
+	align-items: center;
+}
+
+.missTxt {
+	padding-left: 20px;
+	font-size: 20px;
+	line-height: 25px;
+	/* letter-spacing: 0.2rem; */
+	word-spacing: 0.5rem;
+}
+
+.missTxt li {
+	margin-bottom: 1rem;
+}
+
+.tech-cards,
+.whyUs {
+	margin-top: 100px;
+}
+
+.contain {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+	.list {
+		padding-left: 20px;
+	}
+	#techno {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+}
+
+.txt {
+	padding-top: 20px;
+	list-style-position: inside;
+	text-align: left;
+	padding-left: 30%;
+	line-height: 2.5rem;
+	font-size: large;
+	font-weight: 100;
+	list-style: disc;
+}
+
+.txt2 {
+	padding-top: 20px;
+	padding-left: 30%;
+	list-style-position: inside;
+	text-align: left;
+	line-height: 2.5rem;
+	font-size: large;
+	font-weight: 100;
+	list-style: disc;
+}
