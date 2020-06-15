@@ -2,7 +2,7 @@ h1 {
 	text-align: center;
 	font-size: 5vw;
 	padding-top: 1rem;
-	color: orange;
+	color: #ff8021;
 	width: 80%;
 	margin: 0 auto;
 	text-shadow: 3px 3px #f0a71f;
@@ -79,21 +79,8 @@ h2 {
 /*letter-spacing: 2px;
 
 }*/
-.btn-primary {
-	background-color: orange;
-	border: 2px solid orange;
-	height: auto;
-	width: auto;
-	margin-top: 4rem;
-	box-shadow: 2px 5px orange;
-	/*margin-left: 5rem;*/
-}
-.btn-primary:hover {
-	background-color: orange;
-	border: 2px solid orange;
-	/*transform: perspective(500px) translateZ(40px);*/
-}
 .link {
+	display: inline-block;
 	color: white;
 	text-decoration: none;
 	font-size: 2vw;
@@ -105,7 +92,7 @@ h2 {
 }
 /*@keyframes text{
 	0%{
-		color: orange;
+		color: #ff8021;
 		margin-bottom: -40px;
 		font-size: 0px;
 
@@ -123,21 +110,21 @@ h2 {
 	}*/
 /*
 	60%{
-		color: orange;
+		color: #ff8021;
 		margin-bottom: -40px;
 		font-size: 30px;
 
 	}
 
 	80%{
-		color: orange;
+		color: #ff8021;
 		margin-bottom: -40px;
 		font-size: 40px;
 
 	}
 
 	95%{
-		color: orange;
+		color: #ff8021;
 		margin-bottom: -40px;
 		font-size: 50px;
 
@@ -182,15 +169,25 @@ h2{
 }*/
 
 #imageblock {
-	animation: image;
+	/* animation: image;
 	animation-duration: 3s;
 	animation-direction: ease-in-out;
 
 	transition-property: transform;
-	transition-duration: 0.3s;
+	transition-duration: 0.3s; */
+	/* width: 100%;
+	background: url('../images/broimg.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; */
+	transition: all 0.4s ease;
 }
 #imageblock:hover {
-	transform: perspective(500px) translateZ(55px);
+	transform: scale(1.05);
+}
+
+#imageblock img:hover {
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.26);
 }
 
 @keyframes image {
@@ -217,6 +214,19 @@ h2{
 }
 
 .btn-primary {
+	background-color: #ff8021;
+	border: 1px solid #ff8021;
+	margin-top: 4rem;
+	box-shadow: 0px 2px 5px 0px #ff8021;
+}
+.btn-primary:hover {
+	background-color: #ff6f00;
+	border-color: #ff6f00;
+	box-shadow: 0px 2px 15px 0px #ff8021;
+	/*transform: perspective(500px) translateZ(40px);*/
+}
+
+/* .btn-primary {
 	animation: buton;
 	animation-direction: ease-in;
 	animation-duration: 3.5s;
@@ -231,9 +241,8 @@ h2{
 	color: #f7f7f7;
 	box-shadow: 2px 5px #e09c14;
 	border: 1px solid #e09c14;
-	/*transform: rotateY(360deg);*/
 	transform: perspective(500px) translateZ(55px);
-}
+} */
 @keyframes buton {
 	0% {
 		opacity: 0;

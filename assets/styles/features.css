@@ -215,7 +215,7 @@ body {
 
 #video-conferencing {
 	/* position: relative; */
-	min-height: 80vh;
+	/* min-height: 80vh; */
 	width: 100%;
 	padding: 3rem 3rem;
 	display: flex;
@@ -232,7 +232,7 @@ body {
 	text-align: center;
 	font-size: 2.5rem;
 	font-weight: 400;
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
 }
 
 #video-conferencing .video-content {
