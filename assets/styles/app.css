@@ -14,8 +14,6 @@ body {
 	font-family: 'Roboto', sans-serif !important;
 }
 
-
-
 ul {
 	list-style-position: inside;
 }
@@ -615,10 +613,6 @@ input.form-control:active {
 		margin-top: 24px;
 	}
 
-	#footer-section .all-links {
-		/* flex-direction: column; */
-	}
-
 	#footer-section .footer-links {
 		flex-direction: column;
 		align-items: center;
@@ -631,5 +625,11 @@ input.form-control:active {
 	}
 	#footer-section .home a img {
 		width: 150px;
+	}
+}
+
+@media (max-width: 400px) {
+	#footer-section .all-links {
+		flex-direction: column;
 	}
 }
